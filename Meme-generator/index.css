@@ -1,0 +1,136 @@
+body {
+    background-color: #1d2326;
+    color: #bfa38a;
+    font-family: monospace;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  img {
+    border: 2px solid white;
+    border-radius: 5px;
+    max-width: 350px;
+    width: 100%;
+  }
+  
+  p {
+    color: #8097a6;
+  }
+  
+  .attribution {
+    width:100px;
+    height: 70px;
+    position: absolute;
+    margin-top: 0px;
+    right: 20px;
+    bottom: 20px;
+    font-size: 1rem;
+    background-color: #6e8595;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    color: #e6ebed;
+    box-shadow: 1px 1px 2px 1px rgba(255, 255, 255, 0.2);
+  }
+  .attribution a i{
+  margin-left: 8px;
+  
+ }
+  
+  a {
+    color: white;
+  }
+  
+  a:hover {
+    opacity: 0.8;
+  }
+  
+  .content {
+    width: 65%;
+    padding-left: 30px;
+    padding-right: 20px;
+    position: relative;
+
+  }
+  
+  .content p {
+    max-width: 80%;
+  }
+  
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px dotted #bfa38a;
+    height: 85vh;
+  }
+  
+  button {
+    width: 200px;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 35px;
+    border: 1px solid #bfa38a;
+    background: transparent;
+    color: #bfa38a;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .reveal-btn {
+    border: none;
+    text-decoration: underline;
+    margin: 0;
+  }
+  
+  .reveal-btn:hover {
+    color: white;
+    background-color: transparent;
+  }
+#hr{
+  width:100% ;
+  display:none;
+}
+  @media only screen and (max-width: 300px) {
+    .main {
+      flex-direction: column;
+    }
+    .sidebar{
+      width:80%;
+      padding-left: 15px;
+      height: auto;
+      margin-bottom: 30px;
+      /* margin-bottom: 20px; */
+    }
+    .content{
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .attribution {
+     position: unset;
+      width:100px;
+      height: 60px;
+      margin-top: 10px;
+      font-size: 0.8rem;
+      
+    }
+    .attribution a i{
+    margin-left: 10px;
+    
+   }
+   #hr{
+    display:block;
+   }
+    
+  }
