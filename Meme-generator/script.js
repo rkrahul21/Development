@@ -17,7 +17,6 @@ function clearAll() {
     const memeContainer = document.querySelector(".meme-content");
     const newMeme = document.createElement("img");
     newMeme.setAttribute("src", randomMemeUrl);
-  
     clearAll();
   
     // Add the new img to the document
@@ -124,6 +123,8 @@ function clearAll() {
   // -----------------------------------------------
   
   // Source: https://www.thecoderpedia.com/blog/programming-memes/, Reddit
+  
+
   const memes = [
     "https://i.redd.it/a0v87gwzoge61.jpg",
     "https://i.redd.it/q29egav34ee61.jpg",
@@ -251,13 +252,14 @@ function clearAll() {
     },
   ];
   
-  function rn(len) {
-    return Math.floor(Math.random() * len);
-  }
-  
   const data = {
     memes,
     jokes,
     quotes,
     riddles,
   };
+  function rn(len) {
+    return Math.floor(Math.random() * len);
+  } 
+  
+  
